@@ -15,6 +15,33 @@ import { useContext } from 'react';
 import { allEvents } from '../../AllProvider/AllProvider';
 import { FaVideo } from 'react-icons/fa';
 import { LiaUserFriendsSolid } from 'react-icons/lia';
+import top_destination_1 from '../../assets/top_destination_1.jpg';
+import top_destination_2 from '../../assets/top_destination_2.jpg';
+import top_destination_3 from '../../assets/top_destination_3.jpg';
+import top_destination_4 from '../../assets/top_destination_4.jpg';
+import top_destination_5 from '../../assets/top_destination_5.jpg';
+import top_destination_6 from '../../assets/top_destination_6.jpg';
+import top_destination_7 from '../../assets/top_destination_7.jpg';
+import top_destination_8 from '../../assets/top_destination_8.jpg';
+import say_user_1 from '../../assets/say_user_1.jpg';
+import say_user_2 from '../../assets/say_user_2.jpg';
+import say_user_3 from '../../assets/say_user_3.jpg';
+import say_user_4 from '../../assets/say_user_4.jpg';
+import say_user_5 from '../../assets/say_user_5.jpg';
+import say_user_6 from '../../assets/say_user_6.jpg';
+import { FaQuoteLeft } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 
 const Home = () => {
   const { isOpen, setOpen } = useContext(allEvents);
@@ -206,6 +233,365 @@ const Home = () => {
           </div>
         </div>
       </header>
+      {/* main */}
+      <main>
+        {/* Top Destinations */}
+        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-16">
+          <div className="flex flex-col items-center gap-y-3 mb-10">
+            <h1 className="text-center text-3xl font-sans font-semibold">
+              Top Destinations
+            </h1>
+            <p className="max-w-xl text-center text-gray-500 px-3">
+              Planning for a trip? We will organize your trip with the best
+              places and within best budget!
+            </p>
+          </div>
+          <div>
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={10}
+              loop={true}
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
+              }}
+              modules={[Pagination, Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className="flex flex-col items-center gap-y-1">
+                  <div className="top_destination rounded-3xl">
+                    <img
+                      className="rounded-3xl"
+                      src={top_destination_1}
+                      alt=""
+                    />
+                  </div>
+                  <p className="font-semibold">Room, Italy</p>
+                  <p className="text-gray-500">3 Hotels</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="flex flex-col items-center gap-y-1">
+                  <div className="top_destination rounded-3xl">
+                    <img
+                      className="rounded-3xl"
+                      src={top_destination_2}
+                      alt=""
+                    />
+                  </div>
+                  <p className="font-semibold">Singapore</p>
+                  <p className="text-gray-500">3 Hotels</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="flex flex-col items-center gap-y-1">
+                  <div className="top_destination rounded-3xl">
+                    <img
+                      className="rounded-3xl"
+                      src={top_destination_3}
+                      alt=""
+                    />
+                  </div>
+                  <p className="font-semibold">Gua, India</p>
+                  <p className="text-gray-500">3 Hotels</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="flex flex-col items-center gap-y-1">
+                  <div className="top_destination rounded-3xl">
+                    <img
+                      className="rounded-3xl"
+                      src={top_destination_4}
+                      alt=""
+                    />
+                  </div>
+                  <p className="font-semibold">Wistler, Canada</p>
+                  <p className="text-gray-500">3 Hotels</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="flex flex-col items-center gap-y-1">
+                  <div className="top_destination rounded-3xl">
+                    <img
+                      className="rounded-3xl"
+                      src={top_destination_5}
+                      alt=""
+                    />
+                  </div>
+                  <p className="font-semibold">Lampur, Malaycia</p>
+                  <p className="text-gray-500">3 Hotels</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="flex flex-col items-center gap-y-1">
+                  <div className="top_destination rounded-3xl">
+                    <img
+                      className="rounded-3xl"
+                      src={top_destination_6}
+                      alt=""
+                    />
+                  </div>
+                  <p className="font-semibold">Paris, France</p>
+                  <p className="text-gray-500">3 Hotels</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="flex flex-col items-center gap-y-1">
+                  <div className="top_destination rounded-3xl">
+                    <img
+                      className="rounded-3xl"
+                      src={top_destination_7}
+                      alt=""
+                    />
+                  </div>
+                  <p className="font-semibold">Sudeny, Australia</p>
+                  <p className="text-gray-500">3 Hotels</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="flex flex-col items-center gap-y-1">
+                  <div className="top_destination rounded-3xl">
+                    <img
+                      className="rounded-3xl"
+                      src={top_destination_8}
+                      alt=""
+                    />
+                  </div>
+                  <p className="font-semibold">Virginia Beach</p>
+                  <p className="text-gray-500">3 Hotels</p>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+        {/* Users Say */}
+        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-16">
+          <div className="flex flex-col items-center gap-y-3 mb-10">
+            <h1 className="text-center text-3xl font-sans font-semibold">
+              What Our Users Say
+            </h1>
+            <p className="max-w-xl text-center text-gray-500 px-3">
+              This is just a simple text made for this unique and awesome
+              template, you can replace it with any text.
+            </p>
+          </div>
+          <div>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              loop={true}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              navigation={true}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
+              modules={[Autoplay, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className=" ">
+                  <div className="flex bg-white justify-center flex-col items-center text-center gap-y-5 border border-gray-300 p-7">
+                    <FaQuoteLeft className="text-2xl text-red-500"></FaQuoteLeft>
+                    <p className="text-gray-500 px-7">
+                      The most well-known dummy text is the Lorem Ipsum, which
+                      is said to have originated in the 16th century.
+                    </p>
+                    <div className="text-orange-400 flex gap-x-2">
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                    </div>
+                  </div>
+                  <div className="w-5 h-5 border border-gray-600 rotate-45 relative mx-auto bottom-3 -z-10"></div>
+                  <div className="flex flex-col items-center justify-center gap-y-1 mt-3">
+                    <img
+                      className="w-16 h-16 rounded-full"
+                      src={say_user_1}
+                      alt=""
+                    />
+                    <p>Calvin Carlo</p>
+                    <p className="text-gray-600">Manager</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" ">
+                  <div className="flex bg-white justify-center flex-col items-center text-center gap-y-5 border border-gray-300 p-7">
+                    <FaQuoteLeft className="text-2xl text-red-500"></FaQuoteLeft>
+                    <p className="text-gray-500 px-7">
+                      The most well-known dummy text is the Lorem Ipsum, which
+                      is said to have originated in the 16th century.
+                    </p>
+                    <div className="text-orange-400 flex gap-x-2">
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                    </div>
+                  </div>
+                  <div className="w-5 h-5 border border-gray-600 rotate-45 relative mx-auto bottom-3 -z-10"></div>
+                  <div className="flex flex-col items-center justify-center gap-y-1 mt-3">
+                    <img
+                      className="w-16 h-16 rounded-full"
+                      src={say_user_2}
+                      alt=""
+                    />
+                    <p>Christa Smith</p>
+                    <p className="text-gray-600">Manager</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" ">
+                  <div className="flex bg-white justify-center flex-col items-center text-center gap-y-5 border border-gray-300 p-7">
+                    <FaQuoteLeft className="text-2xl text-red-500"></FaQuoteLeft>
+                    <p className="text-gray-500 px-7">
+                      The most well-known dummy text is the Lorem Ipsum, which
+                      is said to have originated in the 16th century.
+                    </p>
+                    <div className="text-orange-400 flex gap-x-2">
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                    </div>
+                  </div>
+                  <div className="w-5 h-5 border border-gray-600 rotate-45 relative mx-auto bottom-3 -z-10"></div>
+                  <div className="flex flex-col items-center justify-center gap-y-1 mt-3">
+                    <img
+                      className="w-16 h-16 rounded-full"
+                      src={say_user_3}
+                      alt=""
+                    />
+                    <p>Jemina CLone</p>
+                    <p className="text-gray-600">Manager</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" ">
+                  <div className="flex bg-white justify-center flex-col items-center text-center gap-y-5 border border-gray-300 p-7">
+                    <FaQuoteLeft className="text-2xl text-red-500"></FaQuoteLeft>
+                    <p className="text-gray-500 px-7">
+                      The most well-known dummy text is the Lorem Ipsum, which
+                      is said to have originated in the 16th century.
+                    </p>
+                    <div className="text-orange-400 flex gap-x-2">
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                    </div>
+                  </div>
+                  <div className="w-5 h-5 border border-gray-600 rotate-45 relative mx-auto bottom-3 -z-10"></div>
+                  <div className="flex flex-col items-center justify-center gap-y-1 mt-3">
+                    <img
+                      className="w-16 h-16 rounded-full"
+                      src={say_user_4}
+                      alt=""
+                    />
+                    <p>Smith Vodka</p>
+                    <p className="text-gray-600">Manager</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" ">
+                  <div className="flex bg-white justify-center flex-col items-center text-center gap-y-5 border border-gray-300 p-7">
+                    <FaQuoteLeft className="text-2xl text-red-500"></FaQuoteLeft>
+                    <p className="text-gray-500 px-7">
+                      The most well-known dummy text is the Lorem Ipsum, which
+                      is said to have originated in the 16th century.
+                    </p>
+                    <div className="text-orange-400 flex gap-x-2">
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                    </div>
+                  </div>
+                  <div className="w-5 h-5 border border-gray-600 rotate-45 relative mx-auto bottom-3 -z-10"></div>
+                  <div className="flex flex-col items-center justify-center gap-y-1 mt-3">
+                    <img
+                      className="w-16 h-16 rounded-full"
+                      src={say_user_5}
+                      alt=""
+                    />
+                    <p>Cristino Murfi</p>
+                    <p className="text-gray-600">Manager</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" ">
+                  <div className="flex bg-white justify-center flex-col items-center text-center gap-y-5 border border-gray-300 p-7">
+                    <FaQuoteLeft className="text-2xl text-red-500"></FaQuoteLeft>
+                    <p className="text-gray-500 px-7">
+                      The most well-known dummy text is the Lorem Ipsum, which
+                      is said to have originated in the 16th century.
+                    </p>
+                    <div className="text-orange-400 flex gap-x-2">
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                      <FaStar></FaStar>
+                    </div>
+                  </div>
+                  <div className="w-5 h-5 border border-gray-600 rotate-45 relative mx-auto bottom-3 -z-10"></div>
+                  <div className="flex flex-col items-center justify-center gap-y-1 mt-3">
+                    <img
+                      className="w-16 h-16 rounded-full"
+                      src={say_user_6}
+                      alt=""
+                    />
+                    <p>Smith Vodka</p>
+                    <p className="text-gray-600">Manager</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
