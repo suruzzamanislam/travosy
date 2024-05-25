@@ -7,6 +7,9 @@ import { IoLogoInstagram } from 'react-icons/io5';
 import { CiTwitter } from 'react-icons/ci';
 import { FiPhone } from 'react-icons/fi';
 import { LuSearch } from 'react-icons/lu';
+import { LuMoveRight } from 'react-icons/lu';
+import { FaHeart } from 'react-icons/fa';
+
 import user from '../../assets/user.jpg';
 import logo from '../../assets/logo.png';
 import { NavLink } from 'react-router-dom';
@@ -277,9 +280,9 @@ const Home = () => {
             >
               <SwiperSlide>
                 <div className="flex flex-col items-center gap-y-1">
-                  <div className="top_destination rounded-3xl">
+                  <div className="top_destination rounded-full">
                     <img
-                      className="rounded-3xl"
+                      className="rounded-full"
                       src={top_destination_1}
                       alt=""
                     />
@@ -290,9 +293,9 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex flex-col items-center gap-y-1">
-                  <div className="top_destination rounded-3xl">
+                  <div className="top_destination rounded-full">
                     <img
-                      className="rounded-3xl"
+                      className="rounded-full"
                       src={top_destination_2}
                       alt=""
                     />
@@ -303,9 +306,9 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex flex-col items-center gap-y-1">
-                  <div className="top_destination rounded-3xl">
+                  <div className="top_destination rounded-full">
                     <img
-                      className="rounded-3xl"
+                      className="rounded-full"
                       src={top_destination_3}
                       alt=""
                     />
@@ -316,9 +319,9 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex flex-col items-center gap-y-1">
-                  <div className="top_destination rounded-3xl">
+                  <div className="top_destination rounded-full">
                     <img
-                      className="rounded-3xl"
+                      className="rounded-full"
                       src={top_destination_4}
                       alt=""
                     />
@@ -329,9 +332,9 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex flex-col items-center gap-y-1">
-                  <div className="top_destination rounded-3xl">
+                  <div className="top_destination rounded-full">
                     <img
-                      className="rounded-3xl"
+                      className="rounded-full"
                       src={top_destination_5}
                       alt=""
                     />
@@ -342,9 +345,9 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex flex-col items-center gap-y-1">
-                  <div className="top_destination rounded-3xl">
+                  <div className="top_destination rounded-full">
                     <img
-                      className="rounded-3xl"
+                      className="rounded-full"
                       src={top_destination_6}
                       alt=""
                     />
@@ -355,9 +358,9 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex flex-col items-center gap-y-1">
-                  <div className="top_destination rounded-3xl">
+                  <div className="top_destination rounded-full">
                     <img
-                      className="rounded-3xl"
+                      className="rounded-full"
                       src={top_destination_7}
                       alt=""
                     />
@@ -368,9 +371,9 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex flex-col items-center gap-y-1">
-                  <div className="top_destination rounded-3xl">
+                  <div className="top_destination rounded-full">
                     <img
-                      className="rounded-3xl"
+                      className="rounded-full"
                       src={top_destination_8}
                       alt=""
                     />
@@ -380,6 +383,297 @@ const Home = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
+          </div>
+        </div>
+        {/* tour packages */}
+        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-16">
+          <div className="flex flex-col items-center gap-y-3 mb-5 md:mb-10">
+            <h1 className="text-center text-3xl font-sans font-semibold">
+              Tours Packages
+            </h1>
+            <p className="max-w-xl text-center text-gray-500 px-3">
+              Planning for a trip? We will organize your trip with the best
+              places and within best budget!
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-4">
+            <div className="p-2 rounded-md border shadow-md group">
+              <div className="overflow-hidden rounded-md relative">
+                <img
+                  className="rounded-md scale-125 group-hover:scale-100 duration-300"
+                  src={top_destination_1}
+                  alt=""
+                />
+                <span className="absolute top-3 translate-y-5 group-hover:translate-y-0 duration-200 opacity-0 group-hover:opacity-100 right-3 w-8 h-8 rounded-full  flex justify-center items-center cursor-pointer group">
+                  <FaHeart className="w-full h-full p-2 rounded-full text-gray-300 bg-white hover:text-red-500"></FaHeart>
+                </span>
+              </div>
+              <div className="mt-3 space-y-3">
+                <div className="flex gap-x-2 items-center">
+                  <IoLocationOutline className="text-red-600"></IoLocationOutline>
+                  <span className="text-gray-500">Dubai</span>
+                </div>
+                <p className="text-lg">Cuba Sailing Adventure</p>
+                <div className="text-orange-400 flex gap-x-2 items-center pb-3">
+                  <span className="text-gray-500">Rating:</span>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <span className="text-gray-700">5.0(30)</span>
+                </div>
+                <div className="border-t py-2 flex justify-between items-center ">
+                  <p className="text-lg text-red-500">$ 58 / Day</p>
+                  <button className="flex items-center gap-x-2 text-gray-500 hover:text-red-500">
+                    Explore Now <LuMoveRight></LuMoveRight>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 rounded-md border shadow-md group">
+              <div className="overflow-hidden rounded-md relative">
+                <img
+                  className="rounded-md scale-125 group-hover:scale-100 duration-300"
+                  src={top_destination_2}
+                  alt=""
+                />
+                <span className="absolute top-3 translate-y-5 group-hover:translate-y-0 duration-200 opacity-0 group-hover:opacity-100 right-3 w-8 h-8 rounded-full  flex justify-center items-center cursor-pointer group">
+                  <FaHeart className="w-full h-full p-2 rounded-full text-gray-300 bg-white hover:text-red-500"></FaHeart>
+                </span>
+              </div>
+              <div className="mt-3 space-y-3">
+                <div className="flex gap-x-2 items-center">
+                  <IoLocationOutline className="text-red-600"></IoLocationOutline>
+                  <span className="text-gray-500">Italy</span>
+                </div>
+                <p className="text-lg">Tour in New York</p>
+                <div className="text-orange-400 flex gap-x-2 items-center pb-3">
+                  <span className="text-gray-500">Rating:</span>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <span className="text-gray-700">5.2(30)</span>
+                </div>
+                <div className="border-t py-2 flex justify-between items-center ">
+                  <p className="text-lg text-red-500">$ 52 / Day</p>
+                  <button className="flex items-center gap-x-2 text-gray-500 hover:text-red-500">
+                    Explore Now <LuMoveRight></LuMoveRight>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 rounded-md border shadow-md group">
+              <div className="overflow-hidden rounded-md relative">
+                <img
+                  className="rounded-md scale-125 group-hover:scale-100 duration-300"
+                  src={top_destination_3}
+                  alt=""
+                />
+                <span className="absolute top-3 translate-y-5 group-hover:translate-y-0 duration-200 opacity-0 group-hover:opacity-100 right-3 w-8 h-8 rounded-full  flex justify-center items-center cursor-pointer group">
+                  <FaHeart className="w-full h-full p-2 rounded-full text-gray-300 bg-white hover:text-red-500"></FaHeart>
+                </span>
+              </div>
+              <div className="mt-3 space-y-3">
+                <div className="flex gap-x-2 items-center">
+                  <IoLocationOutline className="text-red-600"></IoLocationOutline>
+                  <span className="text-gray-500">Maldivas</span>
+                </div>
+                <p className="text-lg">Discover Greece</p>
+                <div className="text-orange-400 flex gap-x-2 items-center pb-3">
+                  <span className="text-gray-500">Rating:</span>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <span className="text-gray-700">5.0(30)</span>
+                </div>
+                <div className="border-t py-2 flex justify-between items-center ">
+                  <p className="text-lg text-red-500">$ 50 / Day</p>
+                  <button className="flex items-center gap-x-2 text-gray-500 hover:text-red-500">
+                    Explore Now <LuMoveRight></LuMoveRight>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 rounded-md border shadow-md group">
+              <div className="overflow-hidden rounded-md relative">
+                <img
+                  className="rounded-md scale-125 group-hover:scale-100 duration-300"
+                  src={top_destination_4}
+                  alt=""
+                />
+                <span className="absolute top-3 translate-y-5 group-hover:translate-y-0 duration-200 opacity-0 group-hover:opacity-100 right-3 w-8 h-8 rounded-full  flex justify-center items-center cursor-pointer group">
+                  <FaHeart className="w-full h-full p-2 rounded-full text-gray-300 bg-white hover:text-red-500"></FaHeart>
+                </span>
+              </div>
+              <div className="mt-3 space-y-3">
+                <div className="flex gap-x-2 items-center">
+                  <IoLocationOutline className="text-red-600"></IoLocationOutline>
+                  <span className="text-gray-500">USA</span>
+                </div>
+                <p className="text-lg">Museum of Modern Art</p>
+                <div className="text-orange-400 flex gap-x-2 items-center pb-3">
+                  <span className="text-gray-500">Rating:</span>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <span className="text-gray-700">5.5(30)</span>
+                </div>
+                <div className="border-t py-2 flex justify-between items-center ">
+                  <p className="text-lg text-red-500">$ 60 / Day</p>
+                  <button className="flex items-center gap-x-2 text-gray-500 hover:text-red-500">
+                    Explore Now <LuMoveRight></LuMoveRight>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 rounded-md border shadow-md group">
+              <div className="overflow-hidden rounded-md relative">
+                <img
+                  className="rounded-md scale-125 group-hover:scale-100 duration-300"
+                  src={top_destination_5}
+                  alt=""
+                />
+                <span className="absolute top-3 translate-y-5 group-hover:translate-y-0 duration-200 opacity-0 group-hover:opacity-100 right-3 w-8 h-8 rounded-full  flex justify-center items-center cursor-pointer group">
+                  <FaHeart className="w-full h-full p-2 rounded-full text-gray-300 bg-white hover:text-red-500"></FaHeart>
+                </span>
+              </div>
+              <div className="mt-3 space-y-3">
+                <div className="flex gap-x-2 items-center">
+                  <IoLocationOutline className="text-red-600"></IoLocationOutline>
+                  <span className="text-gray-500">Bali</span>
+                </div>
+                <p className="text-lg">Peek Mountain View</p>
+                <div className="text-orange-400 flex gap-x-2 items-center pb-3">
+                  <span className="text-gray-500">Rating:</span>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <span className="text-gray-700">4.9(30)</span>
+                </div>
+                <div className="border-t py-2 flex justify-between items-center ">
+                  <p className="text-lg text-red-500">$ 45 / Day</p>
+                  <button className="flex items-center gap-x-2 text-gray-500 hover:text-red-500">
+                    Explore Now <LuMoveRight></LuMoveRight>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 rounded-md border shadow-md group">
+              <div className="overflow-hidden rounded-md relative">
+                <img
+                  className="rounded-md scale-125 group-hover:scale-100 duration-300"
+                  src={top_destination_6}
+                  alt=""
+                />
+                <span className="absolute top-3 translate-y-5 group-hover:translate-y-0 duration-200 opacity-0 group-hover:opacity-100 right-3 w-8 h-8 rounded-full  flex justify-center items-center cursor-pointer group">
+                  <FaHeart className="w-full h-full p-2 rounded-full text-gray-300 bg-white hover:text-red-500"></FaHeart>
+                </span>
+              </div>
+              <div className="mt-3 space-y-3">
+                <div className="flex gap-x-2 items-center">
+                  <IoLocationOutline className="text-red-600"></IoLocationOutline>
+                  <span className="text-gray-500">Bangkok</span>
+                </div>
+                <p className="text-lg">Hot Baloon Journey</p>
+                <div className="text-orange-400 flex gap-x-2 items-center pb-3">
+                  <span className="text-gray-500">Rating:</span>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <span className="text-gray-700">5.0(30)</span>
+                </div>
+                <div className="border-t py-2 flex justify-between items-center ">
+                  <p className="text-lg text-red-500">$ 59 / Day</p>
+                  <button className="flex items-center gap-x-2 text-gray-500 hover:text-red-500">
+                    Explore Now <LuMoveRight></LuMoveRight>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 rounded-md border shadow-md group">
+              <div className="overflow-hidden rounded-md relative">
+                <img
+                  className="rounded-md scale-125 group-hover:scale-100 duration-300"
+                  src={top_destination_7}
+                  alt=""
+                />
+                <span className="absolute top-3 translate-y-5 group-hover:translate-y-0 duration-200 opacity-0 group-hover:opacity-100 right-3 w-8 h-8 rounded-full  flex justify-center items-center cursor-pointer group">
+                  <FaHeart className="w-full h-full p-2 rounded-full text-gray-300 bg-white hover:text-red-500"></FaHeart>
+                </span>
+              </div>
+              <div className="mt-3 space-y-3">
+                <div className="flex gap-x-2 items-center">
+                  <IoLocationOutline className="text-red-600"></IoLocationOutline>
+                  <span className="text-gray-500">Singapore</span>
+                </div>
+                <p className="text-lg">Orca Camp Kayaking Tripney</p>
+                <div className="text-orange-400 flex gap-x-2 items-center pb-3">
+                  <span className="text-gray-500">Rating:</span>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <span className="text-gray-700">5.7(30)</span>
+                </div>
+                <div className="border-t py-2 flex justify-between items-center ">
+                  <p className="text-lg text-red-500">$ 54 / Day</p>
+                  <button className="flex items-center gap-x-2 text-gray-500 hover:text-red-500">
+                    Explore Now <LuMoveRight></LuMoveRight>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 rounded-md border shadow-md group">
+              <div className="overflow-hidden rounded-md relative">
+                <img
+                  className="rounded-md scale-125 group-hover:scale-100 duration-300"
+                  src={top_destination_8}
+                  alt=""
+                />
+                <span className="absolute top-3 translate-y-5 group-hover:translate-y-0 duration-200 opacity-0 group-hover:opacity-100 right-3 w-8 h-8 rounded-full  flex justify-center items-center cursor-pointer group">
+                  <FaHeart className="w-full h-full p-2 rounded-full text-gray-300 bg-white hover:text-red-500"></FaHeart>
+                </span>
+              </div>
+              <div className="mt-3 space-y-3">
+                <div className="flex gap-x-2 items-center">
+                  <IoLocationOutline className="text-red-600"></IoLocationOutline>
+                  <span className="text-gray-500">Thiland</span>
+                </div>
+                <p className="text-lg">Caño Cristales River Trip</p>
+                <div className="text-orange-400 flex gap-x-2 items-center pb-3">
+                  <span className="text-gray-500">Rating:</span>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <FaStar></FaStar>
+                  <span className="text-gray-700">5.8(30)</span>
+                </div>
+                <div className="border-t py-2 flex justify-between items-center ">
+                  <p className="text-lg text-red-500">$ 50 / Day</p>
+                  <button className="flex items-center gap-x-2 text-gray-500 hover:text-red-500">
+                    Explore Now <LuMoveRight></LuMoveRight>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center mt-5">
+            <button className="flex items-center gap-x-2 text-gray-500 justify-center hover:text-red-600 duration-100">
+              See More Tours <LuMoveRight></LuMoveRight>
+            </button>
           </div>
         </div>
         {/* Users Say */}

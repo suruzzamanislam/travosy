@@ -1,9 +1,10 @@
 import { Outlet } from 'react-router-dom';
-
+import Footer from '../Pages/Shared/Footer';
 const Layout = () => {
   return (
     <div>
       <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   );
 };
