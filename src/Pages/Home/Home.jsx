@@ -26,6 +26,7 @@ import top_destination_5 from '../../assets/top_destination_5.jpg';
 import top_destination_6 from '../../assets/top_destination_6.jpg';
 import top_destination_7 from '../../assets/top_destination_7.jpg';
 import top_destination_8 from '../../assets/top_destination_8.jpg';
+import faqImg from '../../assets/h_banner_3.jpg';
 import say_user_1 from '../../assets/say_user_1.jpg';
 import say_user_2 from '../../assets/say_user_2.jpg';
 import say_user_3 from '../../assets/say_user_3.jpg';
@@ -45,6 +46,42 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
+
+// FAQ
+import Faq from 'react-faq-component';
+
+const data = {
+  rows: [
+    {
+      title: 'How does it work ?',
+      content: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.`,
+    },
+    {
+      title: 'Do I need a designer to use Travosy ?',
+      content:
+        'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
+    },
+    {
+      title: 'What do I need to do to start selling ?',
+      content: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.`,
+    },
+    {
+      title: 'What happens when I receive an order ?',
+      content: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.`,
+    },
+    {
+      title: 'How does it work  ?',
+      content: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.`,
+    },
+  ],
+};
+const styles = {
+  // bgColor: 'white',
+  titleTextColor: 'blue',
+  rowTitleColor: 'red',
+  rowContentColor: 'grey',
+  arrowColor: 'red',
+};
 
 const Home = () => {
   const { isOpen, setOpen } = useContext(allEvents);
@@ -239,7 +276,7 @@ const Home = () => {
       {/* main */}
       <main>
         {/* Top Destinations */}
-        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-16">
+        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-10 md:my-24">
           <div className="flex flex-col items-center gap-y-3 mb-10">
             <h1 className="text-center text-3xl font-sans font-semibold">
               Top Destinations
@@ -386,7 +423,7 @@ const Home = () => {
           </div>
         </div>
         {/* tour packages */}
-        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-16">
+        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-10 md:my-24">
           <div className="flex flex-col items-center gap-y-3 mb-5 md:mb-10">
             <h1 className="text-center text-3xl font-sans font-semibold">
               Tours Packages
@@ -677,7 +714,7 @@ const Home = () => {
           </div>
         </div>
         {/* Users Say */}
-        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-16">
+        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-10 md:my-24">
           <div className="flex flex-col items-center gap-y-3 mb-10">
             <h1 className="text-center text-3xl font-sans font-semibold">
               What Our Users Say
@@ -883,6 +920,26 @@ const Home = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
+          </div>
+        </div>
+        {/* FAQ */}
+        <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-10 md:my-24">
+          <div className="flex flex-col items-center gap-y-3 mb-5 md:mb-10">
+            <h1 className="text-center text-3xl font-sans font-semibold">
+              Frequently Asked Questions
+            </h1>
+            <p className="max-w-xl text-center text-gray-500 px-3">
+              This is just a simple text made for this unique and awesome
+              template, you can replace it with any text.
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row  gap-x-8">
+            <div className="md:w-1/2">
+              <img className="w-full" src={faqImg} alt="" />
+            </div>
+            <div className="md:w-1/2">
+              <Faq data={data} styles={styles} />
+            </div>
           </div>
         </div>
       </main>
