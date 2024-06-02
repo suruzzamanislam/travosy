@@ -134,11 +134,11 @@ const Home = () => {
             </div>
           </div>
           {/* navbar */}
-          <nav className=" py-3">
+          <nav className="nav_section py-3 before:opacity-20 ">
             <div className=" w-[95%] md:w-[90%] lg:w-[80%] mx-auto flex justify-between">
               <img src={logo} alt="" />
               <div className="flex items-center gap-x-5 text-xl text-white">
-                <ul className="md:flex gap-x-5 hidden text-gray-100">
+                <ul className="md:flex gap-x-5 hidden text-gray-300">
                   {NavItem}
                 </ul>
                 <button>
