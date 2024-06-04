@@ -89,19 +89,29 @@ const Home = () => {
   const NavItem = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink onClick={() => setOpen(false)} to="/">
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/tour">Tour</NavLink>
+        <NavLink onClick={() => setOpen(false)} to="/tour">
+          Tour
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/aboutUs">About Us</NavLink>
+        <NavLink onClick={() => setOpen(false)} to="/aboutUs">
+          About Us
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/blog">Blog</NavLink>
+        <NavLink onClick={() => setOpen(false)} to="/blog">
+          Blog
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/contactUs">Contact Us</NavLink>
+        <NavLink onClick={() => setOpen(false)} to="/contactUs">
+          Contact Us
+        </NavLink>
       </li>
     </>
   );
