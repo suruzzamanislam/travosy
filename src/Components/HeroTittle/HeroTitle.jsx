@@ -43,48 +43,50 @@ const HeroTitle = ({ route, title }) => {
   return (
     <div className="h-[50vh] mb-10 bg-transparent" id="Hero_banner">
       {/* navbar */}
-      <nav className=" py-3 before:opacity-100 bg-transparent">
-        <div className=" w-[95%] md:w-[90%] lg:w-[80%] mx-auto flex justify-between">
-          <img src={logo} alt="" />
-          <div className="flex items-center gap-x-5 text-xl text-black">
-            <ul className="md:flex gap-x-5 hidden text-black">{NavItem}</ul>
-            <button>
-              <LuSearch></LuSearch>
-            </button>
-            <button>
-              <img
-                className="w-9 h-9 rounded-full border-2 border-green-500"
-                src={user}
-                alt=""
-              />
-            </button>
-            <button className="md:hidden">
-              <Hamburger toggled={isOpen} toggle={setOpen}></Hamburger>
-            </button>
+      <div className="absolute z-10 top-0 left-0 w-full h-full">
+        <nav className=" py-3 before:opacity-100 bg-transparent">
+          <div className=" w-[95%] md:w-[90%] lg:w-[80%] mx-auto flex justify-between">
+            <img src={logo} alt="" />
+            <div className="flex items-center gap-x-5 text-xl text-black">
+              <ul className="md:flex gap-x-5 hidden text-black">{NavItem}</ul>
+              <button>
+                <LuSearch></LuSearch>
+              </button>
+              <button>
+                <img
+                  className="w-9 h-9 rounded-full border-2 border-green-500"
+                  src={user}
+                  alt=""
+                />
+              </button>
+              <button className="md:hidden">
+                <Hamburger toggled={isOpen} toggle={setOpen}></Hamburger>
+              </button>
 
-            <ul
-              className={`absolute z-50 left-0 top-[73px] bg-slate-500 w-full flex py-5 gap-y-3 flex-col  items-center justify-center ${
-                isOpen ? 'mobile_menu_down' : 'mobile_menu_up'
-              }`}
-            >
-              {NavItem}
-            </ul>
+              <ul
+                className={`absolute z-50 left-0 top-[73px] bg-slate-500 w-full flex py-5 gap-y-3 flex-col  items-center justify-center ${
+                  isOpen ? 'mobile_menu_down' : 'mobile_menu_up'
+                }`}
+              >
+                {NavItem}
+              </ul>
+            </div>
           </div>
+        </nav>
+        <div className="flex items-center flex-col ">
+          <h1 className="text-4xl font-serif font-semibold mt-16 md:mt-24">
+            {title}
+          </h1>
+          <ul className="flex mt-28 md:mt-36 gap-x-2 items-center font-semibold text-white font-serif">
+            <li>
+              <NavLink className="md:text-gray-700" to="/">
+                TRAVOSY
+              </NavLink>
+            </li>
+            <li>&gt;</li>
+            <li>{route}</li>
+          </ul>
         </div>
-      </nav>
-      <div className="flex items-center flex-col ">
-        <h1 className="text-4xl font-serif font-semibold mt-16 md:mt-24">
-          {title}
-        </h1>
-        <ul className="flex mt-28 md:mt-36 gap-x-2 items-center font-semibold text-white font-serif">
-          <li>
-            <NavLink className="md:text-gray-700" to="/">
-              TRAVOSY
-            </NavLink>
-          </li>
-          <li>&gt;</li>
-          <li>{route}</li>
-        </ul>
       </div>
     </div>
   );
