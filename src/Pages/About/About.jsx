@@ -7,6 +7,17 @@ import teamMember3 from '../../assets/teamMember3.jpg';
 import teamMember4 from '../../assets/teamMember4.jpg';
 import { TbBrandFacebook } from 'react-icons/tb';
 import { IoLogoInstagram } from 'react-icons/io5';
+import { Autoplay, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import aboutImg1 from '../../assets/top_destination_1.jpg';
+import aboutImg2 from '../../assets/top_destination_2.jpg';
+import aboutImg3 from '../../assets/top_destination_3.jpg';
+import aboutImg4 from '../../assets/top_destination_4.jpg';
+import aboutImg5 from '../../assets/top_destination_5.jpg';
+import aboutImg6 from '../../assets/top_destination_6.jpg';
+import aboutImg7 from '../../assets/top_destination_7.jpg';
+import aboutImg8 from '../../assets/top_destination_8.jpg';
+import './About.css';
 const About = () => {
   return (
     <div>
@@ -121,6 +132,59 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-20">
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={0}
+          loop={true}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
+          navigation={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 0,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 0,
+            },
+            1024: {
+              slidesPerView: 7,
+              spaceBetween: 0,
+            },
+          }}
+          modules={[Autoplay, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={aboutImg1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={aboutImg2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={aboutImg3} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={aboutImg4} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={aboutImg5} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={aboutImg6} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={aboutImg7} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={aboutImg8} alt="" />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
