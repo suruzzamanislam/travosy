@@ -198,7 +198,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <form className="bg-white p-8 rounded-lg space-y-5">
+            <form className="bg-transparent border shadow-md shadow-orange-200 text-white p-8 rounded-lg space-y-5">
               <h1 className="text-xl md:text-2xl font-serif font-semibold mb-3">
                 Search Your Destinations
               </h1>
@@ -211,7 +211,7 @@ const Home = () => {
                 </label>
                 <div className="relative">
                   <input
-                    className="focus:outline-none bg-gray-200 rounded-md w-full py-2 pl-8"
+                    className="focus:outline-none bg-transparent border shadow-sm shadow-gray-300 rounded-md w-full py-2 pl-8"
                     type="text"
                     name=""
                     id="search"
@@ -230,7 +230,7 @@ const Home = () => {
                 </label>
                 <div>
                   <input
-                    className="focus:outline-none bg-gray-200 rounded-md w-full py-2 pl-2 pr-2 appearance-auto"
+                    className="focus:outline-none bg-transparent border shadow-sm shadow-gray-300 rounded-md w-full py-2 pl-2 pr-2 appearance-auto"
                     type="date"
                     name=""
                     id="search"
@@ -246,7 +246,7 @@ const Home = () => {
                 </label>
                 <div>
                   <input
-                    className="focus:outline-none bg-gray-200 rounded-md w-full py-2 pl-2 pr-2 appearance-auto"
+                    className="focus:outline-none bg-transparent border shadow-sm shadow-gray-300 rounded-md w-full py-2 pl-2 pr-2 appearance-auto"
                     type="date"
                     name=""
                     id="search"
@@ -260,14 +260,20 @@ const Home = () => {
                 </label>
                 <div className="relative mt-2">
                   <select
-                    className="focus:outline-none bg-gray-200 rounded-md w-full py-2 pl-8 appearance-none"
+                    className="focus:outline-none bg-transparent border shadow-sm shadow-gray-300 rounded-md w-full py-2 pl-8 appearance-none"
                     name=""
                     id=""
                   >
                     {' '}
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option className="text-black" value="1">
+                      1
+                    </option>
+                    <option className="text-black" value="2">
+                      2
+                    </option>
+                    <option className="text-black" value="3">
+                      3
+                    </option>
                   </select>
                   <span className="absolute left-2 top-[9px]">
                     <LiaUserFriendsSolid className="text-xl"></LiaUserFriendsSolid>
