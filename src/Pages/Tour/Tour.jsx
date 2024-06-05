@@ -16,9 +16,11 @@ import 'react-range-slider-input/dist/style.css';
 import './Tour.css';
 import { FaRegStar } from 'react-icons/fa';
 import map from '../../assets/map.png';
+import SmallHeader from '../../Components/SmallHeader';
 const Tour = () => {
   return (
     <div>
+      <SmallHeader></SmallHeader>
       <HeroTitle title="Tour Packages" route="TOUR"></HeroTitle>
       <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto mb-10">
         <div className="w-full flex flex-col md:flex-row justify-between gap-x-5">

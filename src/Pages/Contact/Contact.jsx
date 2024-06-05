@@ -3,9 +3,11 @@ import HeroTitle from '../../Components/HeroTittle/HeroTitle';
 import contactImg from '../../assets/contact.svg';
 import { FiPhone } from 'react-icons/fi';
 import { CiMail } from 'react-icons/ci';
+import SmallHeader from '../../Components/SmallHeader';
 const Contact = () => {
   return (
     <div>
+      <SmallHeader></SmallHeader>
       <HeroTitle title="Contact Us" route="CONTACT"></HeroTitle>
       <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto flex flex-col md:flex-row justify-between gap-6 md:gap-7  lg:gap-28 my-10">
         <div className="md:w-1/2">

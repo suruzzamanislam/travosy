@@ -18,9 +18,11 @@ import aboutImg6 from '../../assets/top_destination_6.jpg';
 import aboutImg7 from '../../assets/top_destination_7.jpg';
 import aboutImg8 from '../../assets/top_destination_8.jpg';
 import './About.css';
+import SmallHeader from '../../Components/SmallHeader';
 const About = () => {
   return (
     <div>
+      <SmallHeader></SmallHeader>
       <HeroTitle title="About Us" route="ABOUT US"></HeroTitle>
       <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto my-10 mt-16">
         <div className="flex flex-col md:flex-row items-center">
